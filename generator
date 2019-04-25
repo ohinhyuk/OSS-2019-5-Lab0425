@@ -11,6 +11,7 @@ while ((1))
 do
 	if [[ $start != $SECONDS ]]
 	then
+		sleep 1
 		echo "$SECONDS"
 		echo >> log.txt "$SECONDS"
 		start=$SECONDS
